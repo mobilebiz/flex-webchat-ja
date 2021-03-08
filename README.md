@@ -3,7 +3,7 @@
 This project is how to customize Twilio Flex WebChat UI Japanese locale.
 Twilio Flex WebChat UI を日本語化します。
 
-![Flex WebChat Japanese](https://mauve-wolf-1490.twil.io/assets/FlexWebChatJapanese.gif)
+![Flex WebChat Japanese](./images/FlexWebChatJapanese.gif)
 
 ## 準備
 
@@ -24,7 +24,7 @@ Flex Flow Sid は、以下の場所を確認してください。
 - Flex メニューを選択し、さらに**メッセージの送受信**を選択します。
 - **web**チャンネルの**IDENTITY**に表示されている FO から始まる文字列が Flow Sid です。
 
-![Flex flow sid](./assets/images/flowSid.png)
+![Flex flow sid](./images/flowSid.png)
 
 ## インストール
 

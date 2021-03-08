@@ -2,7 +2,7 @@
   "use strict";
 
   const WebChat = Twilio.FlexWebChat;
-  const i18n = new I18N_PROPS("en"); // 'en' or 'ja'
+  const i18n = new I18N_PROPS("ja"); // 'en' or 'ja'
 
   // Get environment variables via Functions
   const axiosConfig = {
@@ -56,7 +56,7 @@
   WebChat.createWebChat(appConfig).then((webchat) => {
     const { manager } = webchat;
 
-    //Posting question from preengagement form as users first chat message
+    //Posting question from pre-engagement form as users first chat message
     WebChat.Actions.on("afterStartEngagement", (payload) => {
       const { question } = payload.formData;
       if (!question) return;
