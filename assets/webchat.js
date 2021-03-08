@@ -2,7 +2,7 @@
   "use strict";
 
   const WebChat = Twilio.FlexWebChat;
-  const i18n = new I18N_PROPS("ja"); // 'en' or 'ja'
+  const i18n = new I18N_PROPS("en"); // 'en' or 'ja'
 
   // Get environment variables via Functions
   const axiosConfig = {
@@ -29,13 +29,13 @@
     accountSid: accountSid,
     flexFlowSid: flexFlowSid,
     startEngagementOnInit: false,
-    preEngagementConfig: {},
+    preEngagementConfig: i18n.PRE_ENGAGEMENT_CONFIG,
   };
-  Object.assign(appConfig.preEngagementConfig, i18n.getPreEngagementConfig());
+  // Object.assign(appConfig.preEngagementConfig, i18n.PRE_ENGAGEMENT_CONFIG);
 
   // Chat window configuration
   const mainHeaderProps = {
-    titleText: i18n.getHeaderTitle().titleText,
+    titleText: i18n.HEADER_TITLE.titleText,
     closeCallback: () => {
       console.log(`closeChatWindow`);
       WebChat.Actions.invokeAction("MinimizeChat");
@@ -45,7 +45,7 @@
 
   // Label for chat button
   const entryPointProps = WebChat.EntryPoint.defaultProps;
-  entryPointProps.tagline = i18n.entryPoint.tagline;
+  entryPointProps.tagline = i18n.ENTRY_POINT.tagline;
 
   // Use pre-engagement form
   const messagingCanvasProps = {
@@ -68,7 +68,7 @@
     });
 
     // Changing string template
-    Object.assign(manager.strings, i18n.getStringTemplate());
+    Object.assign(manager.strings, i18n.STRING_TEMPLATE);
 
     // Render WebChat
     webchat.init();

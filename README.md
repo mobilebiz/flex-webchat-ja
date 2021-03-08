@@ -3,7 +3,7 @@
 This project is how to customize Twilio Flex WebChat UI Japanese locale.
 Twilio Flex WebChat UI を日本語化します。
 
-![Flex WebChat Japanese](./assets/images/FlexWebChatJapanese.gif)
+![Flex WebChat Japanese](https://mauve-wolf-1490.twil.io/assets/FlexWebChatJapanese.gif)
 
 ## 準備
 
@@ -11,7 +11,8 @@ Twilio Flex WebChat UI を日本語化します。
 - CLI Serverless Plugins
 
 また、Twilio Flex がセットアップされている必要があります。
-セットアップには、以下の 2 つの情報が必要です。
+
+このプログラムをセットアップには、以下の 2 つの情報が必要です。
 
 - Twilio Account Sid: Twilio のアカウント SID（AC から始まる文字列）
 - Twilio AuthToken: アカウント SID とセットで使う AuthToken

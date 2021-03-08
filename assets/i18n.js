@@ -129,13 +129,16 @@ const I18N_PROPS = class {
     };
   }
 
-  getPreEngagementConfig = () => {
+  get PRE_ENGAGEMENT_CONFIG() {
     return this.preEngagementConfig[this.locale];
-  };
-  getHeaderTitle = () => {
-    return this.headerTitle[this.locale];
-  };
-  getStringTemplate = () => {
+  }
+  get STRING_TEMPLATE() {
     return this.stringTemplate[this.locale];
-  };
+  }
+  get HEADER_TITLE() {
+    return this.headerTitle[this.locale];
+  }
+  get ENTRY_POINT() {
+    return this.entryPoint[this.locale];
+  }
 };
