@@ -1,4 +1,4 @@
-const I18N_PROPS = class {
+class I18N_PROPS {
   constructor(locale = "en") {
     this.locale = locale;
     this.preEngagementConfig = {
@@ -119,14 +119,6 @@ const I18N_PROPS = class {
         titleText: "Flex チャット",
       },
     };
-    this.entryPoint = {
-      en: {
-        tagline: "Chat with us",
-      },
-      ja: {
-        tagline: "チャットで問い合わせ",
-      },
-    };
   }
 
   get PRE_ENGAGEMENT_CONFIG() {
@@ -138,7 +130,4 @@ const I18N_PROPS = class {
   get HEADER_TITLE() {
     return this.headerTitle[this.locale];
   }
-  get ENTRY_POINT() {
-    return this.entryPoint[this.locale];
-  }
-};
+}

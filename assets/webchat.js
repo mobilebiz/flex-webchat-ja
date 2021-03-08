@@ -31,7 +31,6 @@
     startEngagementOnInit: false,
     preEngagementConfig: i18n.PRE_ENGAGEMENT_CONFIG,
   };
-  // Object.assign(appConfig.preEngagementConfig, i18n.PRE_ENGAGEMENT_CONFIG);
 
   // Chat window configuration
   const mainHeaderProps = {
@@ -45,7 +44,7 @@
 
   // Label for chat button
   const entryPointProps = WebChat.EntryPoint.defaultProps;
-  entryPointProps.tagline = i18n.ENTRY_POINT.tagline;
+  entryPointProps.tagline = i18n.STRING_TEMPLATE.EntryPointTagline;
 
   // Use pre-engagement form
   const messagingCanvasProps = {
